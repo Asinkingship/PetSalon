@@ -7,16 +7,25 @@ let petSalon = {
     },
     pets:[
         {
-            name:"Scooby",
-            age:"99",
+            name:"Wolf",
+            age:"6",
             gender:"Male",
-            service:"Grooming"
+            service:"Grooming",
+            breed: "German Shepard"
         },
         {
-            name:"Scrappy",
-            age:"99",
+            name:"Dopey",
+            age:"3",
+            gender:"Female",
+            service:"Grooming",
+            breed:"Boxer" 
+        },
+        {
+            name:"Smoofy",
+            age:"8",
             gender:"Male",
-            service:"Grooming" 
+            service:"Grooming",
+            breed:"Lab" 
         }
     ]
 }
@@ -27,8 +36,9 @@ let petSalon = {
 
 
 function displayNames(){
-//use a loop
-    console.log(petSalon.pets[1].name);
+    for (let i=0; i<petSalon.pets.length; i++);
+    document.getElementById("petList");
+
 
 }
 

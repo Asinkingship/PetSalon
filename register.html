@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <header class="pet-header">
+        <div>
+        <h1>The Fashion Pet</h1>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+            </nav>
+            <div>
+                <h2>The Doggo Fashionistas</h2>
+            </div>
+        </div>   
+    </header>
+
+    <div class="pet-list-button">
+        <div>            
+            <button class="the-button" onclick="displayNames()">List pets</button>
+        </div>
+        <ul id="petList"></ul>
+    </div>
     
 
     <script src="./scripts/register.js"></script>

@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+    margin-top: 60px;
+    color: white;
+}
+h3{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 40px;
+    padding: 1.5rem;
+}
+.descript{
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.index-img {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+header.pet-header{
+    background-image: url(./img/Header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 250px;
+    color:rgb(0, 0, 0);
+    text-align: center;  
+}
+.menu a{
+    padding-top: 3rem;
+    color: rgb(0, 0, 0);
+}
+
+.pet-list-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
