@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="pet-header">
+        <div>
+        <h1>The Fashion Pet</h1>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+            </nav>
+            <div>
+                <h2>The Doggo Fashionistas</h2>
+            </div>
+        </div>   
+    </header>
+    <main>
+        <h2>Register a new pet</h2>
+        <div>
+            <div class="input-control">
+                <label>Name:*</label>
+                <input type="text" id="txtName">
+            </div>
+            <div class="input-control">
+                <label>Age:</label>
+                <input type="number" id="txtAge">
+            </div>
+            <div class="input-control">
+                <label>Gender:</label>
+                <input type="text" id="txtGender">
+            </div>
+            <div class="input-control">
+                <label>Service:*</label>
+                <select id="txtService" >
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Vaccines" >-- Vaccines --</option>
+                    <option value="Grooming" >-- Grooming --</option>
+                </select>
+            </div>
+            
+            <div class="btn-container">
+                <button class="btn btn-primary" onclick="register();">Register</button>
+            </div>
+        </div>
+    </main>
+
+
+        <script src="./scripts/session2.js"></script>
+
+
+</body>
+</html>

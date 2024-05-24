@@ -44,3 +44,12 @@ console.log(student4);
 
 let myArray=[10,false,"richard",student2];
 console.log(myArray[2]);//richard
+
+function displayNames() {
+    let names=""
+    for(let i=0;i<3;i++){
+        names+=`<p> ${petSalon.pets[i].name}</p>`;
+        console.log(names);
+    }
+    document.getElementById("petNames").innerHTML=names;
+}

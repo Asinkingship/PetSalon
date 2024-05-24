@@ -59,7 +59,7 @@ function displayNames() {
 }
 
 function countPets() {
-//connect to the html id peNnumber where we want to display the results
+//connect to the html id petNumber where we want to display the results
         let petNumber = document.getElementById("petNumber");
 //Identify the count with length
         let petCount = petSalon.pets.length;
@@ -68,11 +68,17 @@ function countPets() {
 }
 
 function averageAge() {
+//connect
     let average = document.getElementById("averageAge");
+//cycle thru the array
     for (let i = 0; i < petSalon.pets.length; i++) {
+//
     let petAge = petSalon.pets.age;
+//
     let petCount = petSalon.pets.length;
+//
     let totalAverage = petAge / petCount
+//
     average.textContent = totalAverage.toFixed(2);
     }
 }
