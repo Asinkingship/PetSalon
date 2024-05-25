@@ -38,7 +38,7 @@ h3{
     max-width: 60%;
 }
 
-header.pet-header{
+header.site-init{
     background-image: url(./img/Header.jpg);
     background-position: center center;
     background-size: cover;
@@ -49,13 +49,33 @@ header.pet-header{
 .menu a{
     padding-top: 3rem;
     color: rgb(0, 0, 0);
+    font-weight: bold
 }
-.input-reg{
-    display: flex;
-    align-content: center;
-    justify-items: center;
+.menu a:hover{
+    text-shadow: .5px .5px white;
 
 }
-.input-control{
-    padding: 10px;
+
+.form-container{
+    background-color: gray;
+    height: 30vh;
+    width: 60%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.alert-error{
+    background-color: red;
+}
+
+#petDiv{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+}
+.petCard{
+    background-color: #dedede;
+    padding: 1rem;
 }
