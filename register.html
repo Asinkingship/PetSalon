@@ -20,18 +20,49 @@
         </div>   
     </header>
 
-    <div class="pet-list-button">
-        <div>            
-            <button class="the-button" onclick="displayNames()">List pets</button>
-            <button class="the-button" onclick="countPets()">Count pets</button>
-            <button class="the-button" onclick="averageAge()">Average age of pets</button>
+    <main class="input-reg">
+        <h3>Register a new pet</h3>
+        <div>
+            <div class="input-control">
+                <label>Name:*</label>
+                <input type="text" id="txtName">
+            </div>
+            <div class="input-control">
+                <label>Age:</label>
+                <input type="number" id="txtAge">
+            </div>
+            <div class="input-control">
+                <label>Gender:</label>
+                <input type="text" id="txtGender">
+            </div>
+            <div class="input-control">
+                <label>Service:*</label>
+                <select id="txtService" >
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Vaccines" >-- Vaccines --</option>
+                    <option value="Grooming" >-- Grooming --</option>
+                </select>
+            </div>
+            <div class="input-control">
+                <label>Breed:</label>
+                <input type="text" id="txtBreed">
+            </div>
+            <div class="input-control">
+                <label>Type:*</label>
+                <select id="txtType" >
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Dog" >-- Dog --</option>
+                    <option value="Cat" >-- Cat --</option>
+                    <option value="Monkey" >-- Monkey --</option>
+                    <option value="Snake" >-- Snake --</option>
+                </select>
+            </div>
+            
+            <div class="btn-container">
+                <button class="btn btn-primary" onclick="register();">Register</button>
+            </div>
         </div>
-    </div>
-    <div class="results">
-        <ul id="petList"></ul>
-        <ul id="petNumber"></ul>
-        <ul id="ageAverage"></ul>
-    </div>
+    </main>
     
 
     <script src="./scripts/register.js"></script>

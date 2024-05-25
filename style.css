@@ -50,16 +50,12 @@ header.pet-header{
     padding-top: 3rem;
     color: rgb(0, 0, 0);
 }
-
-.pet-list-button{
+.input-reg{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
+    align-content: center;
+    justify-items: center;
+
 }
-
-.results{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.input-control{
+    padding: 10px;
 }
