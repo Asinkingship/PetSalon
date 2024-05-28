@@ -30,6 +30,10 @@ function isValid(aPet){
         validation=false;
         document.getElementById("txtService").classList.add("alert-error");
     }
+    if(aPet.type==""){//is empty?
+        validation=false;
+        document.getElementById("txtType").classList.add("alert-error");
+    }
 
     //validate the service
 
