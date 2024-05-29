@@ -52,8 +52,21 @@ function register(){
         petSalon.pets.push(newPet);
         displayCards();
         displayTotalPets();
+        displayRows();
         displayServiceCount();
+        displayTypeCount()
     }
+}
+
+function deletePet(index){
+    petSalon.pets.splice(index,1);
+    //also update the rest of the logic.
+    displayCards();
+    displayRows();
+    displayTotalPets();
+    displayServiceCount();
+    displayTypeCount()
+
 }
 
 function init(){
@@ -62,8 +75,10 @@ function init(){
     petSalon.pets.push(pet1);
     petSalon.pets.push(pet2);
     displayCards();
+    displayRows();
     displayTotalPets();
     displayServiceCount();
+    displayTypeCount()
     
 }
 
