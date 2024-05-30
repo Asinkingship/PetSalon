@@ -7,16 +7,28 @@ function displayCards(){
         let pet = petSalon.pets[i];
         
         //create html template
-        card+=`
-            <div class="petCard">
-                <p>${pet.name}</p>
-                <p>${pet.age}</p>
-                <p>${pet.gender}</p>
-                <p>${pet.service}</p>
-                <p>${pet.type}</p>
-                <p>${pet.breed}</p>
-            </div>           
-        `;
+        card += `
+        <div class="petCard card bg-light mb-3">
+            <div class="card-body">
+                <h5 class="card-title">${pet.name}</h5>
+                <p class="card-text">Age: ${pet.age}</p>
+                <p class="card-text">Gender: ${pet.gender}</p>
+                <p class="card-text">Service: ${pet.service}</p>
+                <p class="card-text">Type: ${pet.type}</p>
+                <p class="card-text">Breed: ${pet.breed}</p>
+            </div>
+        </div>
+    `;     
+        // card+=`
+        //     <div class="petCard">
+        //         <p>${pet.name}</p>
+        //         <p>${pet.age}</p>
+        //         <p>${pet.gender}</p>
+        //         <p>${pet.service}</p>
+        //         <p>${pet.type}</p>
+        //         <p>${pet.breed}</p>
+        //     </div>           
+        // `;
     }
     petDiv.innerHTML=card;
     //insert the tmp into the html

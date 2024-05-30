@@ -33,6 +33,7 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10rem;
 }
 .index-img {
     display: inline-flex;
@@ -59,6 +60,9 @@ header.site-init{
     text-shadow: .5px .5px white;
 
 }
+.container-totals{
+    text-align: center;
+}
 
 .form-container{
     background-color: gray;
@@ -82,4 +86,24 @@ header.site-init{
 .petCard{
     background-color: #dedede;
     padding: 1rem;
+}
+
+/* footer */
+
+.bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+footer{
+    background-color: black;
+    height: 100px;
+}
+.menu-footer a{
+    color: white;
+    margin-right: 20px;
+}
+footer h1{
+    color: white;
 }

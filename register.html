@@ -40,7 +40,7 @@
                 <label>Service:*</label>
                 <select id="txtService" class="form-select">
                     <option value="" selected disabled>-- Select an option --</option>
-                    <option value="Vaccines" >-- Vaccines --</option>
+                    <option value="Vaccine" >-- Vaccine --</option>
                     <option value="Grooming" >-- Grooming --</option>
                 </select>
             </div>
@@ -62,15 +62,23 @@
             </div>
         </div>
     </main>
-    <section class="container">
-        <h4>Registered pets</h4>
-        <div class="info">
-            <p>Total = <span id="total">1000</span></p>
-            <p>Grooming = <span id="totalGroomings">1000</span></p>
-            <p>Vaccine = <span id="totalVaccines">1000</span></p>
-            <p>Cats = <span id="totalCats">1000</span></p>
-            <p>Dogs = <span id="totalDogs">1000</span></p>
+    <section class="container-totals">
+        <div class="list-group">
+            <h4 class="list-group-item list-group-item-action active" aria-current="true">Registered pets</h4>
+            <p class="list-group-item mb-2">Total = <span id="total">1000</span></p>
+            <p class="list-group-item mb-2">Grooming = <span id="totalGroomings">1000</span></p>
+            <p class="list-group-item mb-2">Vaccine = <span id="totalVaccines">1000</span></p>
+            <p class="list-group-item mb-2">Cats = <span id="totalCats">1000</span></p>
+            <p class="list-group-item mb-2">Dogs = <span id="totalDogs">1000</span></p>
         </div>
+        <!-- <h4>Registered pets</h4>
+        <div>
+            <p class="mb-2">Total = <span id="total">1000</span></p>
+            <p class="mb-2">Grooming = <span id="totalGroomings">1000</span></p>
+            <p class="mb-2">Vaccine = <span id="totalVaccines">1000</span></p>
+            <p class="mb-2">Cats = <span id="totalCats">1000</span></p>
+            <p class="mb-2">Dogs = <span id="totalDogs">1000</span></p>
+        </div> -->
         <div id="petDiv">
 
         </div>
@@ -98,6 +106,18 @@
 
 
     </section>
+
+    <footer>
+        <div class="bar">
+        <h1>The Fashion Pet</h1>
+        <nav class="menu-footer">
+            <a href="index.html"> Home</a>
+            <a href="register.html"> Register</a>
+        </nav>
+        </div> 
+    </footer>
+
+
     <script src="./scripts/register.js"></script>
     <script src="./scripts/display.js"></script>
 </body>
