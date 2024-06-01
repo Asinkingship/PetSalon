@@ -33,6 +33,30 @@
                 <label class="form-label">Price:</label>
                 <input class="form-control" type="number" id="txtPrice">
             </div>
+            
+            <div class="mb-3">
+                <label>Service:*</label>
+                <select id="txtService" class="form-select">
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Vaccine" >-- Vaccine $29.99 --</option>
+                    <option value="Grooming" >-- Grooming $105.99 --</option>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label>Type:*</label>
+                <select id="txtType" class="form-select" >
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Dog" >-- Visa --</option>
+                    <option value="Cat" >-- Gift Card --</option>
+                    <option value="Dog" >-- Venmo --</option>
+                    <option value="Cat" >-- Reward Points --</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Referral Number:</label>
+                <input class="form-control" type="text" id="txtBreed">
+            </div>
             <div class="btn-container">
                 <button class="btn btn-dark" onclick="register();">Register</button>
             </div>
