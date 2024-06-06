@@ -47,7 +47,9 @@ function isValid(aService){
         validation=false;
         $("#txtPayment").addClass("alert-error");
     }
+    console.log(validation)
     return validation;
+   
 
 }
 function registerService(){
@@ -95,7 +97,6 @@ function deleteService(index){
 }
 
 
-window.onload=init;//waiting to render the html
 
 
 
