@@ -70,8 +70,8 @@ function deletePet(index){
 }
 
 function init(){
-    let pet1 = new Pet("Scooby",7,"male","grooming","bully","dog"); //declaring a object
-    let pet2 = new Pet("Scrappy",3,"male","grooming","terrier","dog");
+    let pet1 = new Pet("Scooby",7,"male","Grooming","bully","dog"); //declaring a object
+    let pet2 = new Pet("Scrappy",3,"male","Grooming","terrier","dog");
     petSalon.pets.push(pet1);
     petSalon.pets.push(pet2);
     displayCards();
