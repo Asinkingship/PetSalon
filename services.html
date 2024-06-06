@@ -31,7 +31,7 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Date:</label>
-                <input class="form-control" type="number" id="txtPrice">
+                <input class="form-control" type="date" id="txtDate">
             </div>
             
             <div class="mb-3">
@@ -45,22 +45,43 @@
             
             <div class="mb-3">
                 <label>Payment Method:*</label>
-                <select id="txtType" class="form-select" >
+                <select id="txtPayment" class="form-select" >
                     <option value="" selected disabled>-- Select an option --</option>
-                    <option value="Dog" >-- Visa --</option>
-                    <option value="Cat" >-- Gift Card --</option>
-                    <option value="Dog" >-- Venmo --</option>
-                    <option value="Cat" >-- Reward Points --</option>
+                    <option value="Visa" >-- Visa --</option>
+                    <option value="Gift Card" >-- Gift Card --</option>
+                    <option value="Venmo" >-- Venmo --</option>
+                    <option value="Reward Points" >-- Reward Points --</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label class="form-label">Referral Number:</label>
-                <input class="form-control" type="text" id="txtBreed">
+                <input class="form-control" type="text" id="txtReferral">
             </div>
             <div class="btn-container">
-                <button class="btn btn-dark" onclick="register();">Confirm</button>
+                <button class="btn btn-dark" onclick="registerService();">Confirm</button>
             </div>
     </main>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Service</th>
+                <th>Payment</th>
+                <th>referral</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="serviceTable">
+            <!-- <tr>
+                <td>Test</td>
+                <td>99</td>
+            </tr> -->
+        </tbody>
+    </table>
 
     <footer>
         <div class="bar">
