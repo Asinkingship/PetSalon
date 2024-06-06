@@ -28,16 +28,24 @@ function Service(description,date,service,payment,referral){
 
 
 
-function isValid(service){
+function isValid(aService){
     let validation=true;
 
-    if(service.description==""){
+    if(aService.description==""){
         validation=false;
         $("#txtDescription").addClass("alert-error");
     }
-    if(service.price==""){
+    if(aService.date==""){
         validation=false;
-        $("#txtPrice").addClass("alert-error");
+        $("#txtDate").addClass("alert-error");
+    }
+    if(aService.service==""){
+        validation=false;
+        $("#txtService").addClass("alert-error");
+    }
+    if(aService.payment==""){
+        validation=false;
+        $("#txtPayment").addClass("alert-error");
     }
     return validation;
 
