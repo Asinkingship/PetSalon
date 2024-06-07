@@ -16,6 +16,7 @@ function displayCards(){
                 <p class="card-text">Service: ${pet.service}</p>
                 <p class="card-text">Type: ${pet.type}</p>
                 <p class="card-text">Breed: ${pet.breed}</p>
+                <button class="btn btn-danger" onclick = "deletePet(${i})">Delete</button></td>
             </div>
         </div>
     `;     

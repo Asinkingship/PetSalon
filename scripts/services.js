@@ -49,9 +49,8 @@ function isValid(aService){
     }
     console.log(validation)
     return validation;
-   
-
 }
+
 function registerService(){
     let inputDescription = document.getElementById("txtDescription").value;
     let inputDate = document.getElementById("txtDate").value;
@@ -63,6 +62,7 @@ function registerService(){
     if(isValid(newService)){
         petService.services.push(newService);
         displayRows();
+        saveItem(newService);
     }
 }
 

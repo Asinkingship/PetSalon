@@ -58,6 +58,19 @@ function register(){
     }
 }
 
+function getServices(){
+    //read tthe LS to get the services
+    let serviceList = readItems();
+    let option = "";
+    //travel the array of services
+    for(let i=0; i<serviceList.length;i++){
+        //creare the <option> on the HTML
+        option= `<option value="${serviceList[i].description}">${serviceList[i].description}</option>`;
+        //ibsert the <option> into the HTML select
+        $("#txtService").append(option);
+    }
+}
+
 function deletePet(index){
     petSalon.pets.splice(index,1);
     //also update the rest of the logic.
@@ -79,6 +92,7 @@ function init(){
     displayTotalPets();
     displayServiceCount();
     displayTypeCount()
+    getServices()
     
 }
 

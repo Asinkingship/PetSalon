@@ -1,7 +1,7 @@
 function saveItem(item){
     let items = readItems();
     items.push(item);//push the new item intp the items array
-    let val= JSON.stringify(item);//parse the obj into JSON string
+    let val= JSON.stringify(items);//parse the obj into JSON string
     console.log(val);//displays the string
     localStorage.setItem("services",val);//send the val to the local storage
 }
